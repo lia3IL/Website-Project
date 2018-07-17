@@ -2,44 +2,52 @@
 
 <html>
 <head>
-  <title>Doctor Caridad Gimeno HELLO </title>
+  <title>Doctor Caridad Gimeno</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
-
-      <header id="header" class="black-nav">
+<!--
+      <header id="header" class="transparent-nav">
         <div class="container">
-          <h1><a>Doctor Caridad Gimeno Aaaaa</a></h1>
+          <div class="navbar-header">
+
+          <h3><a>Doctor Caridad Gimeno</a></h1>
+        </div>
         </div>
         <button class="navbar-toggle">
           <span></span>
         </button>
-        <!-- /Mobile toggle -->
+
         </div>
+      -->
 
 
-        <!-- nav bar -->
+        <!-- nav bar
         <nav id="nav">
           <ul class="main-menu nav navbar-nav navbar-right"  >
-            <!-- button 1 -->
+
             <li><a href="index.html">Home</a></li>
-            <li><a class="drop" href="#">Meet the Team</a>
+            <li><a class="dropdown" href="Meet the Team.html">Meet the Team</a>
             <ul>
-              <li><a href="#">Doctor</a></li>
-              <li><a href="#">Nurses</a></li>
-              <li><a href="#">Students</a></li>
+              <li><a href="Meet the Team.html#Doctor">Doctor</a></li>
+              <li><a href="Meet the Team.html#Nurses">Nurses</a></li>
+              <li><a href="Meet the Team.html#Students">Students</a></li>
 
 
             </ul>
           </li>
           <li><a href="#">Facilities</a></li>
 
-        <!-- button 3 -->
+
           <li><a class="drop" href="#">Diets</a>
             <ul>
               <li><a href="#">Athletes</a></li>
@@ -75,7 +83,7 @@
             </ul>
             </li>
 
-            <!-- button 4-->
+
             <li><a href="#">Blog</a></li>
             <li><a href="#">Recepies</a></li>
             <li><a href="#">Client Area</a></li>
@@ -85,10 +93,59 @@
           </div>
           </header>
 
+        -->
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Dr. Caridad Gimeno</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet the Team <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Doctor</a></li>
+            <li><a href="#">Nurses</a></li>
+            <li><a href="#">Students</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Facilities</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Athletes</a></li>
+            <li><a href="#">Pathologies</a></li>
+            <li><a href="#">Digestive Disorders</a></li>
+            <li><a href="#">Oncologic Patients</a></li>
+
+          </ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Recepies</a></li>
+        </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 
         <!-- Bio and some buttons-->
         <div id="home" class="hero-area">
-        <!--<section id="shortbio" class="hoc clear"> -->
+
+        <div class="bg-image bg-parallax overlay" style="background-image:url(.Users\lucia\Documents\GitHub\Website-Project\image.jpg)"></div>
+
         <div class="home-wrapper">
   				<div class="container">
   					<div class="row">
@@ -215,11 +272,10 @@
       </div>
 
       <div class="col-md-5 col-md-offset-1">
-        <a class="about-video" href="#">
-          <img src="./img/about-video.jpg" alt="">
-          <i class="play-icon fa fa-play"></i>
-        </a>
-      </div>
+        <video width="320" height="240" controls>
+    <source src="videoo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
     </div>
     <!-- /row -->
