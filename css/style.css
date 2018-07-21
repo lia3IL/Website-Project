@@ -1,15 +1,12 @@
 /*
 Template Name: HTML Education Template
 Author: yaminncco
-
 Colors:
 	Body 		: #798696
 	Headers 	: #374050
 	Primary 	: #FF6700
 	Grey 		: #EBEBEB
-
 Fonts: Lato & Montserrat
-
 Table OF Contents
 ------------------------------------
 1 > General
@@ -39,7 +36,7 @@ body {
 	overflow-x:hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
 	margin-top: 12px;
 	margin-bottom: 15px;
 	font-weight: 600;
@@ -48,6 +45,8 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	font-size:38px;
+  padding: 50px;
+
 }
 
 h2 {
@@ -234,7 +233,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	.navbar-brand {
 		margin-left:15px;
 	}
-} 
+}
 
 /*------------------------------------*\
 	Navigation
@@ -319,11 +318,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		    -ms-transform: translateX(0%);
 		        transform: translateX(0%);
 	}
-	
+
 	.main-menu {
 		margin:0;
 	}
-	
+
 	.main-menu li a {
 		color: #374050 !important;
 		display: inline-block;
@@ -890,7 +889,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .post-pagination .pages li:hover a {
 	color:#FFF;
-} 
+}
 
 .pagination-back , .pagination-next {
 	display: block;
@@ -946,7 +945,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	background-color:transparent;
 	border:none;
 }
-
 .widget.search-widget .input:focus + button {
 	color:#FF6700;
 }
@@ -1194,41 +1192,41 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	#why-us .feature {
 		margin-top:40px;
 	}
-	
+
 	.about-video {
 		margin-top:40px;
 	}
-	
+
 	/*-- Call to action --*/
 	#cta {
 		text-align:center;
 	}
-	
+
 	/*-- Footer --*/
 	.footer-logo {
 		text-align:center;
 	}
-	
+
 	.footer-nav {
 		text-align:center;
 	}
 	.footer-nav li {
 		margin-top: 10px;
 	}
-	
+
 	.footer-social {
 		text-align:center;
 	}
 	.footer-social li {
 		margin-top: 10px;
 	}
-	
+
 	.footer-copyright {
 		text-align:center;
 		line-height:inherit;
 		margin-top:20px;
 	}
-	
+
 	/*-- Contact page --*/
 	.contact-form  {
 		margin-bottom:40px;
@@ -1237,7 +1235,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	.contact-form button {
 		float:none !important;
 	}
-	
+
 	/*-- Blog page --*/
 	#main {
 		margin-bottom:80px;
@@ -1266,18 +1264,18 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	#courses-wrapper [class*='col-xs'] {
 		width:100%;
 	}
-	
+
 	/*-- Blog Comments --*/
 	.blog-comments .media .media {
 		margin-left:0px;
 	}
-	
+
 	/*-- Blog Reply Form --*/
 	.blog-reply-form .input.name-input , .blog-reply-form .input.email-input {
 		width: 100%;
 		float:none;
 	}
-	
+
 	.blog-reply-form .input.email-input {
 		margin-left: 0px;
 	}
@@ -1285,7 +1283,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /*------------------------------------*\
 	Preloader
-\*------------------------------------*/ 
+\*------------------------------------*/
 #preloader {
 	position:fixed;
 	left:0;

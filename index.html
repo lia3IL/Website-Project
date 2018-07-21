@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>Doctor Caridad Gimeno</title>
+  <title>Doctor Caridad Gimeno</title> <!-- -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -15,18 +15,18 @@
 
 </head>
 <body>
+    <div class="bg-image bg-parallax overlay" style="background-image:url(https://i.pinimg.com/736x/d3/e3/27/d3e327b39a3833f20d22cf6695b64c73.jpg)"></div>
+
 <!--
       <header id="header" class="transparent-nav">
         <div class="container">
           <div class="navbar-header">
-
           <h3><a>Doctor Caridad Gimeno</a></h1>
         </div>
         </div>
         <button class="navbar-toggle">
           <span></span>
         </button>
-
         </div>
       -->
 
@@ -34,24 +34,18 @@
         <!-- nav bar
         <nav id="nav">
           <ul class="main-menu nav navbar-nav navbar-right"  >
-
             <li><a href="index.html">Home</a></li>
             <li><a class="dropdown" href="Meet the Team.html">Meet the Team</a>
             <ul>
               <li><a href="Meet the Team.html#Doctor">Doctor</a></li>
               <li><a href="Meet the Team.html#Nurses">Nurses</a></li>
               <li><a href="Meet the Team.html#Students">Students</a></li>
-
-
             </ul>
           </li>
           <li><a href="#">Facilities</a></li>
-
-
           <li><a class="drop" href="#">Diets</a>
             <ul>
               <li><a href="#">Athletes</a></li>
-
               <li><a class="drop" href="#">Healthy Lifestyle</a>
                 <ul>
                   <li><a href="#">Kids</a></li>
@@ -82,8 +76,6 @@
               <li><a href="#">Oncologic Patients</a></li>
             </ul>
             </li>
-
-
             <li><a href="#">Blog</a></li>
             <li><a href="#">Recepies</a></li>
             <li><a href="#">Client Area</a></li>
@@ -92,8 +84,8 @@
           </nav>
           </div>
           </header>
-
         -->
+        <container> <!-- our drop down menu -->
         <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -102,7 +94,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Dr. Ca5ridad Gimeno</a>
+      <a class="navbar-brand" href="#">Dr. Caridad Gimeno</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -115,7 +107,8 @@
             <li><a href="#">Students</a></li>
           </ul>
         </li>
-        <li><a href="#">Facilities</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+
 
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
@@ -124,8 +117,7 @@
             <li><a href="#">Pathologies</a></li>
             <li><a href="#">Digestive Disorders</a></li>
             <li><a href="#">Oncologic Patients</a></li>
-
-          </ul>
+  </ul>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Recepies</a></li>
         </li>
@@ -138,13 +130,12 @@
     </div>
   </div>
 </nav>
-
+</container>
 
 
         <!-- Bio and some buttons-->
         <div id="home" class="hero-area">
 
-        <div class="bg-image bg-parallax overlay" style="background-image:url(.Users\lucia\Documents\GitHub\Website-Project\image.jpg)"></div>
 
         <div class="home-wrapper">
   				<div class="container">
@@ -291,6 +282,7 @@
 
   <!-- Backgound Image -->
   <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
+  <div class="bg-image bg-parallax overlay" style="background-image:url(https://i.pinimg.com/736x/d3/e3/27/d3e327b39a3833f20d22cf6695b64c73.jpg)"></div>
   <!-- Backgound Image -->
 
   <!-- container -->
@@ -299,6 +291,7 @@
     <!-- row -->
     <div class="row">
 
+  <div class="bg-image bg-parallax overlay" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Interior_design_of_the_Tallinn_Creative_Hub_%28Kultuurikatel%29_%2835765945170%29.jpg/1599px-Interior_design_of_the_Tallinn_Creative_Hub_%28Kultuurikatel%29_%2835765945170%29.jpg)"></div>
       <div class="col-md-8 col-md-offset-2 text-center">
         <h2 class="white-text">Contact Us</h2>
         <p class="lead white-text">Have any questions? Talk to a member of the team</p>
@@ -337,7 +330,7 @@
       <div class="col-md-6">
         <ul class="footer-nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Facilites</a></li>
+          <li><a href="facilities.html">Facilites</a></li>
           <li><a href="#">Diet</a></li>
           <li><a href="#">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -386,6 +379,13 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+$(document).ready(function(){
+ $('.dropdown-submenu a.test').on("click", function(e){
+ $(this).next('ul').toggle();
+ e.stopPropagation();
+ e.preventDefault();
+ });
+});
 
 </body>
 </html>

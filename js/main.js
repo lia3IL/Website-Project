@@ -13,3 +13,7 @@
 
 })(jQuery);
 $('.dropdown-toggle').dropdown()
+
+$(".plus").click(function(){
+ $(this).toggleClass("minus")  ;
+})
