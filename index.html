@@ -15,6 +15,7 @@
 
 </head>
 <body>
+    <div class="bg-image bg-parallax overlay" style="background-image:url(https://i.pinimg.com/736x/d3/e3/27/d3e327b39a3833f20d22cf6695b64c73.jpg)"></div> 
 
 <!--
       <header id="header" class="transparent-nav">
@@ -95,6 +96,7 @@
           </header>
 
         -->
+        <container> <!-- our drop down menu -->
         <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -118,6 +120,7 @@
         </li>
         <li><a href="#">Facilities</a></li>
 
+
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -125,21 +128,7 @@
             <li><a href="#">Pathologies</a></li>
             <li><a href="#">Digestive Disorders</a></li>
             <li><a href="#">Oncologic Patients</a></li>
-            <div class="dropdown-divider"></div>
-            <li>
-                   <a href="#">2-level Dropdown <i class="icon-arrow-right"></i></a>
-                   <ul class="dropdown-menu sub-menu">
-                       <li><a href="#">Action</a></li>
-                       <li><a href="#">Another action</a></li>
-                       <li><a href="#">Something else here</a></li>
-                       <li class="divider"></li>
-                       <li class="nav-header">Nav header</li>
-                       <li><a href="#">Separated link</a></li>
-                       <li><a href="#">One more separated link</a></li>
-                   </ul>
-               </li>
-
-          </ul>
+  </ul>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Recepies</a></li>
         </li>
@@ -152,7 +141,7 @@
     </div>
   </div>
 </nav>
-
+</container>
 
 
         <!-- Bio and some buttons-->
@@ -304,6 +293,7 @@
 
   <!-- Backgound Image -->
   <div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
+  <div class="bg-image bg-parallax overlay" style="background-image:url(https://i.pinimg.com/736x/d3/e3/27/d3e327b39a3833f20d22cf6695b64c73.jpg)"></div>
   <!-- Backgound Image -->
 
   <!-- container -->
@@ -311,9 +301,9 @@
 
     <!-- row -->
     <div class="row">
+
   <div class="bg-image bg-parallax overlay" style="background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Interior_design_of_the_Tallinn_Creative_Hub_%28Kultuurikatel%29_%2835765945170%29.jpg/1599px-Interior_design_of_the_Tallinn_Creative_Hub_%28Kultuurikatel%29_%2835765945170%29.jpg)"></div>
       <div class="col-md-8 col-md-offset-2 text-center">
-
         <h2 class="white-text">Contact Us</h2>
         <p class="lead white-text">Have any questions? Talk to a member of the team</p>
         <a class="main-button icon-button" href="#">Contact Us Now</a>
@@ -400,6 +390,13 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+$(document).ready(function(){
+ $('.dropdown-submenu a.test').on("click", function(e){
+ $(this).next('ul').toggle();
+ e.stopPropagation();
+ e.preventDefault();
+ });
+});
 
 </body>
 </html>
