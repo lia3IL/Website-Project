@@ -40,13 +40,17 @@ h2,h3,h4,h5,h6 {
 	margin-top: 12px;
 	margin-bottom: 15px;
 	font-weight: 600;
-	color: #374050;
+	color: #EBEBEB;
 }
 
 h1 {
+<<<<<<< HEAD
 	font-size:38px;
   padding: 50px;
 
+=======
+	font-family: fantasy;
+>>>>>>> 6028a09f1ed6b7c10f2b9deaafc53997727fd832
 }
 
 h2 {
@@ -107,7 +111,6 @@ blockquote:before{
 	border-radius:50%;
 	border:1px solid #EBEBEB;
 }
-
 
 /* --- Section --- */
 .section {
@@ -331,6 +334,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 /* -- Mobile Toggle Btn -- */
+
 .navbar-toggle {
 	position:fixed;
 	right:0;
