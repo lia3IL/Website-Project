@@ -39,14 +39,15 @@ h2,h3,h4,h5,h6 {
 	margin-top: 12px;
 	margin-bottom: 15px;
 	font-weight: 600;
-	color: red;
+	color: #EBEBEB;
 }
 
 h1 {
-  color: purple ;
-}
+<<<<<<< HEAD
+	font-size:38px;
+  padding: 50px;
 
-h1 {
+=======
 	font-family: fantasy;
 >>>>>>> 6028a09f1ed6b7c10f2b9deaafc53997727fd832
 }
@@ -948,7 +949,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	background-color:transparent;
 	border:none;
 }
-
 .widget.search-widget .input:focus + button {
 	color:#FF6700;
 }
