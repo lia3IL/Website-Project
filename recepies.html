@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Caridad Gimeno</title> <!-- -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="code.css"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    filterSelection("all") // Execute the function and show all columns
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</head>
+<body style="background-color:powderblue;">
+  <container> <!-- our drop down menu -->
+  <nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Dr. Caridad Gimeno</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet the Team <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Doctor</a></li>
+      <li><a href="#">Nurses</a></li>
+      <li><a href="#">Students</a></li>
+    </ul>
+  </li>
+  <li><a href="facilities.html">Facilities</a></li>
+
+
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Athletes</a></li>
+      <li><a href="#">Pathologies</a></li>
+      <li><a href="#">Digestive Disorders</a></li>
+      <li><a href="#">Oncologic Patients</a></li>
+</ul>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Recepies</a></li>
+  </li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</container>
+
+
+
+
+  <div id="courses" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 style="color:#4169e1";"font-family:verdana";>Looking for inspiration?</h2>
+          <p  	style="color:#483d8b" class="lead">Look at the following suggestions and click on the images to access their recepies</p>
+          <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Vegetarian')"> Vegetarian</button>
+  <button class="btn" onclick="filterSelection('Vegan')"> Vegan</button>
+  <button class="btn" onclick="filterSelection('Protein')"> Protein</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Vegetarian">
+    <div class="content">
+      <p><a href="https://www.bbcgoodfood.com/recipes/2027/onepot-mushroom-and-potato-curry"><img src="https://i.ytimg.com/vi/UiH01sAsvgg/maxresdefault.jpg" alt="Vegetarian Curry" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Mushroom and Potato Curry</h4>
+      <p>Create a tasty, spicy vegetarian dish with mushroom and curry in less than half an hour</p>
+    </div>
+  </div>
+  <div class="column Vegetarian">
+    <div class="content">
+      <p><a href="https://www.jamieoliver.com/recipes/cheese-recipes/spinach-feta-filo-pie/"><img src="https://scrummylane.com/wp-content/uploads/2017/03/spinach_feta_filo_pie_4.jpg" alt="Vegetarian Pie" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Spinach and Feta Pie</h4>
+      <p>Bored of eating same plate over and over again? Try making this original pie</p>
+    </div>
+  </div>
+  <div class="column Vegetarian">
+    <div class="content">
+      <p><a href="https://www.thespruceeats.com/vegetarian-bean-and-rice-burrito-recipe-3378550"><img src="https://www.vegkitchen.com/wp-content/uploads/2011/04/Bean-burritos-1.jpg" alt="Vegetarian" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Vegetarian Bean and Rice burrito</h4>
+      <p>Have loads of leftover rice? Use this quick and easy recipe to cook some amazing burritos</p>
+
+    </div>
+  </div>
+
+  <div class="column Vegan">
+    <div class="content">
+      <p><a href="https://www.bbcgoodfood.com/recipes/stuffed-pumpkin"><img src="https://img1.cookinglight.timeinc.net/sites/default/files/styles/4_3_horizontal_-_1200x900/public/image/2016/09/main/1610p118-whole-stuffed-roasted-pumpkin.jpg?itok=2Apoe0Dy" alt="Vegetarian Pie" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Stuffed Pumpkin</h4>
+      <p>Throwing a vegan dinner party in the autumn or winter months? Bake a pumpkin with a gorgeous stuffing of rice, fennel, apple, pomegranate seeds and pecans</p>
+    </div>
+  </div>
+  <div class="column Vegan">
+    <div class="content">
+      <p><a href="https://www.waitrose.com/content/waitrose/en/home/recipes/recipe_directory/s/summer-vegetablericemedley.html"><img src="http://assets.kraftfoods.com/recipe_images/Easy_Vegetable_Rice_Medley.jpg" alt="Vegan Rice" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Vegan Rice Medley</h4>
+      <p>Easy and light dish, specially convinient during the summer</p>
+    </div>
+  </div>
+  <div class="column Vegan">
+    <div class="content">
+      <p><a href="https://www.peta.org.uk/recipes/frittata/"><img src="https://atmedia.imgix.net/c6c4ff868d9c68cd974a9c5d3cd2a4cca929576f?fm=jpg&q=45&auto=format&cs=strip&usm=&fit=max" alt="Vegan Rice" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Frittata</h4>
+      <p>Quick and Filling dish which can be made from leftovers</p>
+    </div>
+  </div>
+
+  <div class="column Protein">
+    <div class="content">
+      <p><a href="https://www.foodforfitness.co.uk/recipes/hungarian-pork-goulash/"><img src="http://images.meredith.com/dlv/images/recipe/p_RU160525.jpg" alt="Pork Goulash" style="width:100%"></a></p>
+      <h4 style="color:darkblue">Hungarian Pork goulash</h4>
+      <p>tasty, easy, traditional Hungarian recipe for pork goulash which the whole family will love and it's only 292 calories per portion!</p>
+    </div>
+  </div>
+  <div class="column Protein">
+    <div class="content">
+      <p><a href="https://cafedelites.com/easy-salmon-piccata/"><img src="http://www.feedthefork.com/wp-content/uploads/2017/04/Salmon-Piccata.jpg" alt="Salmon dish" style="width:100%" ></a></p>
+      <h4 style="color:darkblue">Salmon Piccata</h4>
+      <p >Lightened up, quick and easy Salmon Piccata with all of the authentic Piccata flavours of lemon, garlic and capers, and the optional white wine.</p>
+    </div>
+  </div>
+  <div class="column Protein">
+    <div class="content">
+      <p><a href="http://loveandfoodforeva.com/2016/07/turkey-quinoa-stuffed-bell-peppers/"><img src="https://atmedia.imgix.net/6f7165077796a7b15bef185335f1c35cc2f6d20b?auto=format&q=45&w=640.0&h=430.0&fit=max&cs=strip" alt="Stuffed Peppers" width="350" height="300"></a></p>
+      <h4 style="color:darkblue">Stuffed Pepper</h4>
+      <p>Easy, feel good, dinners. They have everything you would want in a meal- meat, a starch, veggies, and cheese!</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
