@@ -1,3 +1,31 @@
+<<<<<<< HEAD
+=======
+/*
+Template Name: HTML Education Template
+Author: yaminncco
+Colors:
+	Body 		: #798696
+	Headers 	: #374050
+	Primary 	: #FF6700
+	Grey 		: #EBEBEB
+Fonts: Lato & Montserrat
+Table OF Contents
+------------------------------------
+1 > General
+2 > Logo
+3 > Navigation
+4 > Hero Area
+5 > About & Why Us (Feature)
+6 > Courses
+7 > Footer
+8 > Contact Page
+9 > Blog Page
+10 > Blog Page Sidebar
+11 > Single Post Page
+12 > Responsive
+13 > Preloader
+------------------------------------*/
+>>>>>>> 2d82f46dc85219ee95227dfa656b2a0a4a2a22ba
 
 body {
     font-family: 'Oswald', sans-serif;
@@ -20,10 +48,12 @@ h1 {
 
 h1 {
 	font-family: fantasy;
+>>>>>>> 6028a09f1ed6b7c10f2b9deaafc53997727fd832
 }
 
 h2 {
 	font-size:30px;
+  padding:10px;
 }
 
 h3 {

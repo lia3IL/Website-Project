@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.9.2, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="{{ url_for('static',filename='assets/images/logo.png') }}" type="image/x-icon">
+  <meta name="description" content="">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <title>Register</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/bootstrap-material-design-font/css/material.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/web/assets/mobirise-icons/mobirise-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/tether/tether.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/animate.css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/dropdown/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+  <title>Doctor Caridad Gimeno</title> <!-- -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+  <div class="bg-image bg-parallax overlay" style="background-image:url(https://cdn-image.foodandwine.com/sites/default/files/styles/medium_2x/public/buying-healthy-foods-ft-blog0617.jpg?itok=fdrZyzB6)"></div>
+
+
+      <container> <!-- our drop down menu -->
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="navbar-header" >
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Dr. Caridad Gimeno</a>
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet the Team <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Doctor</a></li>
+          <li><a href="#">Nurses</a></li>
+          <li><a href="#">Students</a></li>
+        </ul>
+      </li>
+      <li><a href="facilities.html">Facilities</a></li>
+
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Athletes</a></li>
+          <li><a href="#">Pathologies</a></li>
+          <li><a href="#">Digestive Disorders</a></li>
+          <li><a href="#">Oncologic Patients</a></li>
+  </ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Recepies</a></li>
+      </li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+  </container>
+
+
+
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar" id="header1-d" style="background-image: url(static/assets/images/jumbotron.jpg);">
+
+<!--
+<div ng-app=""><p style="text-align: center;">
+<font style="color: red; font-size: '18'" ><b>{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block body %}{% endblock %}</b></font></p>
+-->
+    <div class="mbr-table-cell">
+
+        <div class="container">
+            <div class="row">
+                <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center" >
+
+
+                    <h1 style="color: white; text-align: center; padding:10px;">REGISTRATION FORM</h1>
+                    <p class="mbr-section-lead lead">
+
+                    <form action = "registform" id="reg" method = post>
+<p align="left"><font style="color: white"><b>Name:</b></font><br><input id =field1 name="field1" type = "text" ng-model="a" placeholder = "Full Name" size="65"></p>
+<p align="left"><font style="color: white"><b>Email ID:</b> </font><br><input id =field2 name="field2" type = "text" ng-model="b" placeholder = "Email ID here" size="65"></p>
+<p align="left"><font style="color: white"><b>User ID:</b> </font><br><input id =field3 name="field3" type = "text" ng-model="c" placeholder = "User ID" size="65"></p>
+<p align="left"><font style="color: white"><b>Password:</b> </font><br><input id =field4 name="field4" type = "password" ng-model="d" placeholder = "Password " size="65"></p>
+<p align="left"><font style="color: white"><b>Confirm Password:</b>  </font><br><input id =field5 name="field5" type = "password" ng-model="e" placeholder = "Re-type password" size="65"></p>
+
+
+
+<input class="mbr-section-btn" type="submit" />
+</p></form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+  <script src="{{ url_for('static',filename='assets/web/assets/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/tether/tether.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/smooth-scroll/SmoothScroll.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/viewportChecker/jquery.viewportchecker.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/jarallax/jarallax.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/dropdown/js/script.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/touchSwipe/jquery.touchSwipe.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/theme/js/script.js') }}"></script>
+
+
+  <input name="animation" type="hidden">
+  <footer id="footer" class="section" style="padding-top: 70px; padding-bottom:1px;">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+
+        <!-- footer logo -->
+        <div class="col-md-6">
+          <div class="footer-logo">
+            <a class="logo" href="index.html">
+              <img src="./img/logo.png" alt="logo">
+            </a>
+          </div>
+        </div>
+        <!-- footer logo -->
+
+        <!-- footer nav -->
+        <div class="col-md-6">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facilities.html">Facilites</a></li>
+            <li><a href="#">Diet</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Recepies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /footer nav -->
+
+      </div>
+      <!-- /row -->
+
+      <!-- row -->
+      <div id="bottom-footer" class="row">
+
+        <!-- social -->
+        <div class="col-md-4 col-md-push-8">
+          <ul class="footer-social">
+            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <!-- /social -->
+
+
+
+      </div>
+      <!-- row -->
+
+    </div>
+    <!-- /container -->
+
+  </footer>
+  </body>
+</html>
