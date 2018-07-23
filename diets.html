@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Caridad Gimeno</title> <!-- -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/diets.css"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    filterSelection("all") // Execute the function and show all columns
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</head>
+<!-- <body style="background-image:url(https://images.pexels.com/photos/988865/pexels-photo-988865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"> -->
+<div class="bg-image bg-parallax highlight" style="height:2; background-image:url(https://images.pexels.com/photos/988865/pexels-photo-988865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+
+  <container> <!-- our drop down menu -->
+  <nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Dr. Caridad Gimeno</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet the Team <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Doctor</a></li>
+      <li><a href="#">Nurses</a></li>
+      <li><a href="#">Students</a></li>
+    </ul>
+  </li>
+  <li><a href="facilities.html">Facilities</a></li>
+
+
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Athletes</a></li>
+      <li><a href="#">Pathologies</a></li>
+      <li><a href="#">Digestive Disorders</a></li>
+      <li><a href="#">Oncologic Patients</a></li>
+</ul>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Recepies</a></li>
+  </li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container">
+
+<iframe width="420" height="315"
+src="https://youtu.be/92SF7eH1vto/autoplay=1">
+</iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
