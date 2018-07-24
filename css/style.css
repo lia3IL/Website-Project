@@ -1,14 +1,15 @@
-<<<<<<< HEAD
-=======
 /*
 Template Name: HTML Education Template
 Author: yaminncco
+
 Colors:
 	Body 		: #798696
 	Headers 	: #374050
 	Primary 	: #FF6700
 	Grey 		: #EBEBEB
+
 Fonts: Lato & Montserrat
+
 Table OF Contents
 ------------------------------------
 1 > General
@@ -25,36 +26,32 @@ Table OF Contents
 12 > Responsive
 13 > Preloader
 ------------------------------------*/
->>>>>>> 2d82f46dc85219ee95227dfa656b2a0a4a2a22ba
 
+/*------------------------------------*\
+	General
+\*------------------------------------*/
+/* --- typography --- */
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
     font-weight: 400;
     color: #798696;
 	overflow-x:hidden;
 }
 
-h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
 	margin-top: 12px;
 	margin-bottom: 15px;
 	font-weight: 600;
-	color: #EBEBEB;
+	color: #374050;
 }
 
 h1 {
-<<<<<<< HEAD
 	font-size:38px;
-  padding: 50px;
-
-=======
-	font-family: fantasy;
->>>>>>> 6028a09f1ed6b7c10f2b9deaafc53997727fd832
 }
 
 h2 {
 	font-size:30px;
-  padding:10px;
 }
 
 h3 {
@@ -111,6 +108,7 @@ blockquote:before{
 	border-radius:50%;
 	border:1px solid #EBEBEB;
 }
+
 
 /* --- Section --- */
 .section {
@@ -305,7 +303,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 		background: #FFF;
 		-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 		        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-		padding-top: 80px;
+		padding-top: 10px;
 		padding-bottom: 40px;
 		-webkit-transform: translateX(100%);
 		    -ms-transform: translateX(100%);
@@ -334,7 +332,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 /* -- Mobile Toggle Btn -- */
-
 .navbar-toggle {
 	position:fixed;
 	right:0;
@@ -949,6 +946,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 	background-color:transparent;
 	border:none;
 }
+
 .widget.search-widget .input:focus + button {
 	color:#FF6700;
 }
