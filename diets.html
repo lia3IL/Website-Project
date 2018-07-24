@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Caridad Gimeno</title> <!-- -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="css/diets.css"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    filterSelection("all") // Execute the function and show all columns
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</head>
+<<<<<<< HEAD
+<!--<body style="background-image:url(https://images.pexels.com/photos/988865/pexels-photo-988865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"> -->
+=======
+<!-- <body style="background-image:url(https://images.pexels.com/photos/988865/pexels-photo-988865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"> -->
+>>>>>>> f0f23a1294b38ac41b50ec392d203b5a58e14c70
+<div class="bg-image bg-parallax highlight" style="height:2; background-image:url(https://images.pexels.com/photos/988865/pexels-photo-988865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)"></div>
+
+  <container> <!-- our drop down menu -->
+  <nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">Dr. Caridad Gimeno</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Meet the Team <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Doctor</a></li>
+      <li><a href="#">Nurses</a></li>
+      <li><a href="#">Students</a></li>
+    </ul>
+  </li>
+  <li><a href="facilities.html">Facilities</a></li>
+
+
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Diets <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Athletes</a></li>
+      <li><a href="#">Pathologies</a></li>
+      <li><a href="#">Digestive Disorders</a></li>
+      <li><a href="#">Oncologic Patients</a></li>
+</ul>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Recepies</a></li>
+  </li>
+
+</ul>
+<ul class="nav navbar-nav navbar-right">
+  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<<<<<<< HEAD
+
+
+
+<!--
+<iframe width="420" height="315"
+src="https://youtu.be/92SF7eH1vto/autoplay=1">
+</iframe>
+-->  <div id="home" class="hero-area" style="size:2;">
+
+
+  <div class="home-wrapper">
+    <div class="container">
+<br>
+<br>
+<br>
+<br>
+        <div align="center">
+          <iframe width="800" height="500"
+          src="https://www.youtube.com/embed/92SF7eH1vto?autoplay=1">
+          </iframe>
+
+  <!-- <a href="something" class="btn" style="background-color:#f14e4e">Athletes</a>
+  <a href="something" class="btn" style="background-color:#f1bb4e">Pathologies</a>
+  <a href="something" class="btn" style="background-color:#84f14e">Digestive Disorders</a>
+  <a href="something" class="btn" style="background-color:#9a4ef1">Oncologic Patients</a>
+-->
+<h1 style="text-shadow: white 0px 0px 10px;"> WE OFFER A RANGE OF DIETS TO FIT YOUR NEEDS: </h1>
+<button class="collapsible" style="background-color:#f14e4e; text-shadow: white 0px 0px 10px; ">ATHLETES</button>
+<div class="content">
+  <p> For proper planning of sports nutrition , we must take into account the individual characteristics , their previous nutritional status and the type of sport they perform.
+It is also important to see if you are in training periods or are going to take a sports test. All nutrients are necessary for all individuals, but in the case of athletes, increasing energy needs may increase the needs of some of them, especially macronutrients, such as carbohydrates or proteins , as well as water .
+Even so, sports nutrition must be varied , avoiding eliminating food groups, and must be designed in accordance with the demands of the practice of sports.
+With regard to the taking of supplements , we can say that, for an amateur practice with a well-made diet, it is not necessary to use any type of supplements. For high performance athletes it may be necessary to supplement some deficiency if the medical tests that are practiced so indicate.
+SEE MORE BY CLICKING ON THE PICTURE BELOW!</p>
+<p><a href="https://www.topdoctors.es/en/articulos-medicos/nutricion-deportiva-que-se-debe-cambiar"><img src="https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Athletes" style="width:100%" ></a></p>
+</div>
+<br>
+<button class="collapsible" style="background-color:#f1bb4e; text-shadow: white 0px 0px 10px;">PATHOLOGIES</button>
+<div class="content">
+  <p>It's such an amazing claim that it's hard to believe: You can beat some of the most dangerous medical conditions around simply by eating right and exercising. But this promise isn't snake oil or even an exaggeration—it's scientific fact, you can heal yourself with food. Studies done at leading research centers show that food can do what drugs often can't: Restore your health and vitality.
+  SEE MORE BY CLICKING ON THE PICTURE BELOW!</p>
+<p><a href="https://www.prevention.com/food-nutrition/healthy-eating/a20456403/heal-yourself-with-food/"><img src="https://images.pexels.com/photos/1065588/pexels-photo-1065588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Salmon dish" style="width:100%" ></a></p>
+</div>
+
+<button class="collapsible" style="background-color:#84f14e; text-shadow: white 0px 0px 10px; ">DIGESTIVE DISORDERS</button>
+<div class="content">
+  <p>The occasional fry-up or boozy night is unlikely to give you anything more than a short-lived stomach upset. But overindulge too often and you could be storing up trouble for yourself. Here's a tummy-friendly diet to aim for. SEE MORE BY CLICKING ON THE PICTURE BELOW!</p>
+<p><a href="https://www.nhs.uk/live-well/eat-well/good-foods-to-help-your-digestion/"><img src="https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Salmon dish" style="width:100%" ></a></p>
+</div>
+
+<button class="collapsible" style="background-color:#9a4ef1;text-shadow: white 0px 0px 10px; ">ONCOLOGIC PATIENTS</button>
+<div class="content">
+  <p>Individuals with decreased immune function are at increased risk of developing a food-related infection. You can decrease your risk of food-borne illness through proper preparation of food and drinks. Some food and drinks are more likely to contain harmful bacteria and germs.
+SEE MORE BY CLICKING ON THE PICTURE BELOW!
+</p>
+<p><a href="https://www.seattlecca.org/food-and-safety-general-oncology-diet-guidelines"><img src="https://images.pexels.com/photos/248016/pexels-photo-248016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Salmon dish" style="width:100%" ></a></p>
+</div>
+</div>
+
+    </div>
+  </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+<footer id="footer" class="section">
+
+  <!-- container -->
+  <div class="container">
+
+    <!-- row -->
+    <div class="row">
+
+      <!-- footer logo -->
+      <div class="col-md-6">
+        <div class="footer-logo">
+          <a class="logo" href="index.html">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+      </div>
+      <!-- footer logo -->
+
+      <!-- footer nav -->
+      <div class="col-md-6">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilites</a></li>
+          <li><a href="#">Diet</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">Recepies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- /footer nav -->
+
+    </div>
+    <!-- /row -->
+
+    <!-- row -->
+    <div id="bottom-footer" class="row">
+
+      <!-- social -->
+      <div class="col-md-4 col-md-push-8">
+        <ul class="footer-social">
+          <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <!-- /social -->
+
+
+
+    </div>
+    <!-- row -->
+
+  </div>
+  <!-- /container -->
+
+</footer>
+</body>
+</html>
