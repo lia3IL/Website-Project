@@ -38,8 +38,25 @@ body {
     color: #798696;
 	overflow-x:hidden;
 }
+p.padding {
+    padding-left: 40px;
+    font-family: "sans-serif";
+    font-style: italic;bold;
+    font-size: 40px;
+    color:#013220;
+}
+p.padding2 {
+    padding-left: 45px;
+    font-family: "minion";
+    color:#024b30;
+}
+p.padding3 {
+    padding-left: 45px;
+    font-family: "minion";
+    color:#006400;
+}
 
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
 	margin-top: 12px;
 	margin-bottom: 15px;
 	font-weight: 600;
@@ -47,12 +64,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size:38px;
+	font-size:85px;
 }
 
-h2 {
-	font-size:30px;
-}
+
+
 
 h3 {
 	font-size:24px;
@@ -113,14 +129,18 @@ blockquote:before{
 /* --- Section --- */
 .section {
 	position:relative;
-	padding-top:80px;
-	padding-bottom:80px;
+	padding-top:60px;
+	padding-bottom:60px;
 }
-
+.section1 {
+	position:relative;
+	padding-top:30px;
+	padding-bottom:30px;
+}
 .section-hr {
 	margin-top:80px;
 	margin-bottom:80px;
-	border-color: #EBEBEB;
+	border-color: orange;
 }
 
 .section-header {
@@ -644,9 +664,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 \*------------------------------------*/
 
 #bottom-footer {
-	margin-top: 20px;
-	padding-top: 20px;
-	border-top: 1px solid #EBEBEB;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 2px solid #EBEBEB;
 }
 
 /* -- Footer Logo -- */
@@ -684,7 +704,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .footer-nav li a:after {
 	content:"";
 	display:block;
-	height:2px;
+	height:1px;
 	background-color:#FF6700;
 	width:100%;
 	-webkit-transform: translateY(5px);
@@ -869,10 +889,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .post-pagination .pages li {
 	width: 40px;
 	height: 40px;
-	line-height: 40px;
+	line-height: 60px;
 	text-align: center;
 	border-radius: 50%;
-	background-color: #EBEBEB;
+	background-color: #000080;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
 }
@@ -884,7 +904,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .post-pagination .pages li:hover  , .post-pagination .pages li.active {
-	background-color: #FF6700;
+	background-color: #000080;
 	color:#FFF;
 }
 
