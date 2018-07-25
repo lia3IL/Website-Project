@@ -41,13 +41,14 @@ body {
 p.padding {
     padding-left: 40px;
     font-family: "sans-serif";
-    font-style: italic;bold;
+
     font-size: 40px;
     color:#013220;
 }
 p.padding2 {
     padding-left: 45px;
     font-family: "minion";
+    font-weight: bold;
     color:#024b30;
 }
 p.padding3 {
@@ -76,6 +77,7 @@ h3 {
 
 h4 {
 	font-size:18px;
+
 }
 
 a {
@@ -634,6 +636,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .course .course-title {
 	display:block;
 	height:42px;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 .course .course-details {
